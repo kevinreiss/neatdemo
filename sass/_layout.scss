@@ -1,0 +1,37 @@
+// Enter Neat
+
+nav, footer, header #header, #messages {
+  @include outer-container;
+}
+
+#messages {
+  .warning {
+    @include flash(red);
+    @include span-columns(9);
+    }
+}
+
+section {
+  @include outer-container;
+  aside { 
+    @include media ($mobile) {
+      @include span-columns(9);
+    }
+    @include media ($tablet) {
+      @include span-columns(4);
+    }
+    @include span-columns(3);
+    @include border-style(dashed null solid);
+  }
+  article { 
+    @include media ($tablet) {
+      @include span-columns(8);
+    }
+    @include span-columns(9);
+    @include border-color(red green null blue); 
+  }
+}
+
+ul {
+   @extend %default-ul;
+}
