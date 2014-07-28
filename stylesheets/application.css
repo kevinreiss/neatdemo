@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* manifest file for application */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -497,11 +498,11 @@ header.navigation {
           box-sizing: border-box;
           display: block; } }
 
-nav, footer, header #header, #messages {
+nav, header #header, #messages {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  nav:after, footer:after, header #header:after, #messages:after {
+  nav:after, header #header:after, #messages:after {
     content: "";
     display: table;
     clear: both; }
@@ -573,4 +574,27 @@ section {
         section article:last-child {
           margin-right: 0; } }
     section article:last-child {
+      margin-right: 0; }
+
+footer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+  footer #footer-nav {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    footer #footer-nav:last-child {
+      margin-right: 0; }
+  footer #footer-logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    footer #footer-logo:last-child {
       margin-right: 0; }

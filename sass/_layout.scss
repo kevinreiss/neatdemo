@@ -1,6 +1,6 @@
 // Enter Neat
 
-nav, footer, header #header, #messages {
+nav, header #header, #messages {
   @include outer-container;
 }
 
@@ -29,6 +29,17 @@ section {
     }
     @include span-columns(9);
     @include border-color(red green null blue); 
+  }
+}
+
+footer {
+  @include outer-container;
+  #footer-nav {
+    @include span-columns(9);
+  }
+
+  #footer-logo {
+    @include span-columns(3);
   }
 }
 
