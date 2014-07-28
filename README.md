@@ -22,3 +22,6 @@ You need functional ruby and node environments (for bower) to run this demo.
 ```
 > sass --watch sass:stylesheets
 ```
+
+## Running the project with Grunt
+1. ## TO DO
